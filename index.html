@@ -5,7 +5,30 @@
         <link href="styles.css" rel="stylesheet"/>
     </head>
     <body>
-        <h1>Unit Converter</h1>
-        <h3>Length</h3>
+        <div class="converter">
+            <h1>Unit Converter</h1>
+            <h3>Length</h3>
+            <input type="number" id="inputValue" placeholder="Enter value"/>
+
+        <div class="selectors">
+            <select id="fromUnit">
+                <option value="meters">Meters</option>
+                <option value="feet">Feet</option>
+            </select>
+
+            <span>Go</span>
+
+            <select id="toUnit">
+                <option value="feet">Feet</option>
+                <option value="meters">Meters</option>
+            </select>
+        </div>
+
+        <button onclick="convert()">Convert</button>
+
+        <p id="result"></p>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
